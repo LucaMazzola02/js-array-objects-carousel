@@ -19,9 +19,8 @@ main{
 div.carousel{
     position: relative;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 500px;
 }
 
 div.previous-button,
@@ -63,14 +62,26 @@ div.carousel .carousel-item.active{
 
 main img{
     width: 100%;
-    height: 500px;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 
 .description{
+    color: #fff;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.description h4{
+    margin: 0;
+    font-family: cursive;
+}
+
+.description p{
+    font-size: 12px;
+    font-family: cursive;
 }
