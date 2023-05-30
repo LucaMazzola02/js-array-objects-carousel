@@ -1,0 +1,72 @@
+body{
+    background: linear-gradient(0deg, rgba(178, 78, 245, 0) 0%, rgba(232, 49, 125, 0.183) 100%);
+    color: white;
+    height: 87vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+main{
+    background-color: white;
+    color: rgba(232, 49, 125, 0.183);
+    border-radius: 1rem; 
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 6rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+div.carousel{
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+div.previous-button,
+div.next-button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 1.4rem;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    display: flex;
+    cursor: crosshair;
+}
+
+div.previous-button:hover,
+div.next-button:hover{
+    background-color: rgb(198, 198, 198);
+    color: #333;
+}
+div.previous-button i,
+div.next-button i{
+    margin: auto;
+}
+
+
+div.previous-button{
+    top: .5rem;
+}
+
+div.next-button{
+    bottom: .5rem;
+}
+
+div.carousel .carousel-item{
+    display: none;
+    height: 100%;
+}
+
+div.carousel .carousel-item.active{
+    display: block;
+}
+
+main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
