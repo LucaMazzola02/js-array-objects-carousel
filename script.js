@@ -52,6 +52,10 @@ images.forEach((carouselImage) =>{
     carouselElement.innerHTML +=
     `<div class="carousel-item">
         <img src="${carouselImage.image}" alt="Carousel slide image">
+        <div> class="description"
+           <h1>${carouselImage.title}</h1>
+           <p>${carouselImage.text}</p>
+        </div>   
     </div>`;
 })
 
