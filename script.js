@@ -51,7 +51,7 @@ images.forEach((carouselImage) =>{
 
     carouselElement.innerHTML +=
     `<div class="carousel-item">
-        <img src="img/${carouselImage}" alt="Carousel slide image">
+        <img src="${carouselImage.image}" alt="Carousel slide image">
     </div>`;
 })
 
@@ -76,7 +76,7 @@ const nextButton = document.querySelector('div.next-button');
 
 
 nextButton.addEventListener('click', function(){
-    if (activeIndex == imagesList.length - 1 ) {
+    if (activeIndex == images.length - 1 ) {
         activeIndex = 0;
     } else {
         activeIndex = activeIndex + 1;

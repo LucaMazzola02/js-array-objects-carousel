@@ -7,10 +7,10 @@ body{
 
 main{
     background-color: white;
-    color: rgba(232, 49, 125, 0.183);
+    color: #fff;
     border-radius: 1rem; 
-    padding: 2rem;
-    max-width: 1000px;
+    padding: .7rem;
+    max-width: 600px;
     margin: 6rem auto;
     text-align: center;
     font-size: 2rem;
@@ -18,27 +18,20 @@ main{
 
 div.carousel{
     position: relative;
-    height: 500px;
-    width: 100%;
 }
 
 div.previous-button,
 div.next-button{
     position: absolute;
-    width: 30px;
-    height: 30px;
-    font-size: 1.4rem;
-    background-color: white;
+    font-size: 2.4rem;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 50%;
     display: flex;
-    cursor: crosshair;
+    cursor: grab;
 }
 
 div.previous-button:hover,
 div.next-button:hover{
-    background-color: rgb(198, 198, 198);
     color: #333;
 }
 div.previous-button i,
@@ -66,7 +59,7 @@ div.carousel .carousel-item.active{
 
 main img{
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover;
     display: block;
 }
